@@ -22,13 +22,6 @@ export function* getPosts() {
   // const requestURL = `https://api.github.com/users/${username}/repos?type=all&sort=updated`;
   const requestURL = `https://jsonplaceholder.typicode.com/posts?id=${id}`;
 
-  // try {
-  //   // Call our request helper (see 'utils/request')
-  //   const repos = yield call(request, requestURL);
-  //   yield put(reposLoaded(repos, username));
-  // } catch (err) {
-  //   yield put(repoLoadingError(err));
-  // }
   try {
     const posts = yield call(request, requestURL);
     yield put(postsLoaded(posts));

@@ -31,9 +31,9 @@ import { CHANGE_ID } from './constants';
 //   };
 // }
 
-export function changeId(id) {
+export function changeId(currentid) {
   return {
     type: CHANGE_ID,
-    id,
+    currentid,
   };
 }

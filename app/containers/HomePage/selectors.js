@@ -5,7 +5,7 @@
 import { createSelector } from 'reselect';
 import { initialState } from './reducer';
 
-const selectHome = state => state.home || initialState;
+const selectHome = state => state.posts || initialState;
 
 const makeSelectId = () =>
   createSelector(
@@ -13,4 +13,4 @@ const makeSelectId = () =>
     homeState => homeState.currentid,
   );
 
-export { selectHome, makeSelectId };
+export { makeSelectId };

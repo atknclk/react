@@ -14,7 +14,7 @@ import { LOAD_POSTS_SUCCESS, LOAD_POSTS, LOAD_POSTS_ERROR } from './constants';
 export const initialState = {
   loading: false,
   error: false,
-  currentid: false,
+  //currentid: false,
   userData: {
     posts: false,
   },

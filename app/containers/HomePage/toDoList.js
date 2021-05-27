@@ -45,7 +45,6 @@ export function toDoList({
     posts,
   };
   return (
-    // <button onClick = {() => setIsButtonClick(true)}>DENE BAKAM</button>
     <article>
       <Form onSubmit={onSubmitForm}>
         <label htmlFor="currentid">
@@ -54,11 +53,11 @@ export function toDoList({
             <FormattedMessage {...messages.trymeAtPrefix} />
           </AtPrefix>
           <Input
-            id="2"
+            id="currentid"
             type="text"
             placeholder="enter an id"
             value={currentid}
-            onChange={onChangeId}
+            onChange={(e) => onChangeId(e)}
           />
         </label>
       </Form>
